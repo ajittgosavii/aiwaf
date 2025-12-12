@@ -11,6 +11,8 @@ Features:
 - Export to Terraform/CloudFormation
 """
 
+from __future__ import annotations
+
 import streamlit as st
 import json
 import pandas as pd
