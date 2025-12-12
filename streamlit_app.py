@@ -68,21 +68,21 @@ except Exception as e:
 
 # Optional advanced modules
 try:
-    from eks_modernization_module import EKSModernizationModule
+    from eks_modernization_module import EKSDesignWizard as EKSModernizationModule
     MODULE_STATUS['EKS Modernization'] = True
 except Exception as e:
     MODULE_STATUS['EKS Modernization'] = False
     MODULE_ERRORS['EKS Modernization'] = str(e)
 
 try:
-    from finops_module import FinOpsModule
+    from finops_module import AWSCostExplorerIntegration as FinOpsModule
     MODULE_STATUS['FinOps'] = True
 except Exception as e:
     MODULE_STATUS['FinOps'] = False
     MODULE_ERRORS['FinOps'] = str(e)
 
 try:
-    from modules_security_compliance import SecurityComplianceModule
+    from modules_security_compliance import UnifiedSecurityComplianceModule as SecurityComplianceModule
     MODULE_STATUS['Security & Compliance'] = True
 except Exception as e:
     MODULE_STATUS['Security & Compliance'] = False
