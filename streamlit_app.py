@@ -68,7 +68,7 @@ except Exception as e:
 
 # Optional advanced modules
 try:
-    from eks_modernization_module import EKSDesignWizard as EKSModernizationModule
+    from eks_modernization_module import EKSModernizationModule
     MODULE_STATUS['EKS Modernization'] = True
 except Exception as e:
     MODULE_STATUS['EKS Modernization'] = False
